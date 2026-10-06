@@ -194,7 +194,7 @@ export default function Home() {
                 </article>
               ))}
             </div>
-            <p className="photo-help">Each team member is displayed on a separate mobile row.</p>
+           
           </div>
         </section>
 
