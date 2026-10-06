@@ -16,11 +16,13 @@
 }
 
 * { box-sizing: border-box; }
+html, body { overflow-x: hidden; }
 html { scroll-behavior: smooth; scroll-padding-top: 86px; }
 body { margin: 0; color: var(--ink); background: var(--white); font-family: var(--sans); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
 body::selection { background: #cbe4ef; color: var(--ink); }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; }
+img, svg { display: block; max-width: 100%; height: auto; }
 .shell { width: min(1160px, calc(100% - 52px)); margin-inline: auto; }
 .site-header { position: sticky; z-index: 20; top: 0; background: rgba(255,255,255,.94); border-bottom: 1px solid rgba(220,232,237,.78); backdrop-filter: blur(14px); }
 .nav { height: 74px; display: flex; align-items: center; justify-content: space-between; }
@@ -123,8 +125,8 @@ h1 em { color: var(--blue); font-style: normal; }
 .team-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 30px; margin-bottom: 31px; }
 .team-heading h2 { margin-bottom: 0; }
 .team-heading > p { max-width: 300px; margin: 0 0 6px; color: var(--body); font-size: 12px; }
-.team-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 13px; }
-.member-card { min-width: 0; background: white; border: 1px solid #e1ebef; transition: transform .22s, box-shadow .22s, border-color .22s; }
+.team-grid { min-width: 0; display: grid; grid-template-columns: repeat(5,1fr); gap: 13px; }
+.member-card { min-width: 0; max-width: 100%; background: white; border: 1px solid #e1ebef; transition: transform .22s, box-shadow .22s, border-color .22s; }
 .member-card:hover { transform: translateY(-4px); border-color: #bdd6e0; box-shadow: 0 12px 28px rgba(38,77,95,.08); }
 .photo-slot { position: relative; display: grid; place-items: center; overflow: hidden; aspect-ratio: 1 / 1.05; background-color: #e8f2f6; }
 .photo-slot .member-photo { object-fit: cover; }
@@ -203,8 +205,9 @@ h1 em { color: var(--blue); font-style: normal; }
   .sdg-card { justify-self: end; }
   .team-heading { align-items: flex-start; flex-direction: column; gap: 5px; }
   .team-heading > p { margin: 0; }
-  .team-grid { grid-template-columns: repeat(2,1fr); gap: 9px; }
-  .photo-slot { aspect-ratio: 1 / .9; }
+  .team-grid { grid-template-columns: 1fr; gap: 12px; }
+  .member-card { width: 100%; }
+  .photo-slot { aspect-ratio: 1 / .78; }
   .member-details { padding: 12px 11px 14px; }
   .member-details h3 { font-size: clamp(16px,4vw,20px); }
   .photo-help { text-align: left; }

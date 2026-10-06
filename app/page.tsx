@@ -188,14 +188,14 @@ export default function Home() {
               {team.map((member, index) => (
                 <article className="member-card reveal" key={member.name} style={{ animationDelay: `${index * 70}ms` }}>
                   <div className={`photo-slot photo-tone-${index + 1}`}>
-                    {member.photo ? <Image className="member-photo" src={member.photo} alt={member.name} fill sizes="(max-width: 700px) 45vw, 220px" /> : <span className="photo-initials">{member.initials}</span>}
+                    {member.photo ? <Image className="member-photo" src={member.photo} alt={member.name} fill sizes="(max-width: 700px) 100vw, 220px" /> : <span className="photo-initials">{member.initials}</span>}
                     {!member.photo && <span className="photo-caption">PHOTO</span>}
                   </div>
                   <div className="member-details"><h3>{member.name}</h3><p>{member.course}</p></div>
                 </article>
               ))}
             </div>
-            <p className="photo-help">Photo spaces are ready for your team portraits.</p>
+            <p className="photo-help">Each team member is displayed on a separate mobile row.</p>
           </div>
         </section>
 
