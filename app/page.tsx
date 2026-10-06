@@ -48,7 +48,6 @@ export default function Home() {
       <header className="site-header">
         <nav className="nav shell" aria-label="Main navigation">
           <a className="brand" href="#top" aria-label={`${PROJECT_NAME} home`}>
-            <span className="brand-icon" aria-hidden="true">B</span>
             <span>{PROJECT_NAME}</span>
           </a>
           <button
@@ -107,7 +106,7 @@ export default function Home() {
               <path d="M98 357V317H113V357M91 317H120" stroke="#446A82" strokeWidth="3" />
               <path d="M0 380H620" stroke="#D6E5EC" strokeWidth="46" />
               <path d="M0 380H620" stroke="#FFFFFF" strokeWidth="2" strokeDasharray="16 14" />
-              <g className="art-pin"><circle cx="418" cy="162" r="24" fill="#2B627D"/><path d="M418 174C418 174 407 162 407 155.5C407 149.7 411.9 145 418 145C424.1 145 429 149.7 429 155.5C429 162 418 174 418 174Z" fill="white"/><circle cx="418" cy="155" r="3.5" fill="#2B627D"/></g>
+              <g><circle cx="418" cy="162" r="24" fill="#2B627D"/><path d="M418 174C418 174 407 162 407 155.5C407 149.7 411.9 145 418 145C424.1 145 429 149.7 429 155.5C429 162 418 174 418 174Z" fill="white"/><circle cx="418" cy="155" r="3.5" fill="#2B627D"/></g>
             </svg>
             <div className="art-note"><span className="note-spark">✳</span><span><strong>Progress · labour · materials</strong><small>Updates can live in many places</small></span></div>
           </div>
@@ -207,7 +206,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="footer"><div className="shell footer-inner"><a className="brand" href="#top"><span className="brand-icon" aria-hidden="true">B</span><span>{PROJECT_NAME}</span></a><p>Innovation Challenge · 2026<br />Solving real-world construction problems through technology.</p><a className="footer-contact" href={WHATSAPP_URL} target="_blank" rel="noreferrer">+91 78881 24630 <Arrow /></a></div></footer>
+      <footer className="footer"><div className="shell footer-inner"><a className="brand" href="#top"><span>{PROJECT_NAME}</span></a><p>Innovation Challenge · 2026<br />Solving real-world construction problems through technology.</p><a className="footer-contact" href={WHATSAPP_URL} target="_blank" rel="noreferrer">+91 78881 24630 <Arrow /></a></div></footer>
     </>
   );
 }
