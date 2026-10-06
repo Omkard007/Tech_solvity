@@ -8,7 +8,7 @@ const WHATSAPP_URL =
   'https://wa.me/917888124630?text=Hi%20I%27m%20interested%20in%20joining%20your%20team%20for%20the%20construction%20project.';
 
 const team = [
-  { name: 'Om Bhaltilak', course: 'Computer Engineering', initials: 'OB', photo: '/images/om%20bhaltilak.jpeg ' },
+  { name: 'Om Bhaltilak', course: 'Computer Engineering', initials: 'OB', photo: '/images/om%20bhaltilak.jpeg' },
   { name: 'Omkar Dhumal', course: 'Computer Engineering', initials: 'OD', photo: '/images/omkar%20dhumal.jpeg' },
   {
     name: 'Padmakar Bagade',
